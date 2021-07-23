@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def canUnlockAll(boxes):
     """ a method that determines if all the boxes can be opened """
     if not boxes:
@@ -9,8 +11,8 @@ def canUnlockAll(boxes):
 
     for box in boxes:
         for key in box:
-                if key < size and key != index:
-                    checker[key] = key
+            if key < size and key != index:
+                checker[key] = key
         if len(checker) == size - 1:
             return True
         index += 1
