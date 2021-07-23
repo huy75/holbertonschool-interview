@@ -15,7 +15,7 @@ def canUnlockAll(boxes):
 
     for box in boxes:
         if len(box) == 0 or index == 0:
-            checker[index] = -1 
+            checker[index] = -1
         for key in box:
             if key < size and key != index:
                 checker[key] = key
