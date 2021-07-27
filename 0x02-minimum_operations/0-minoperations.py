@@ -19,7 +19,7 @@ def minOperations(n):
         '''
         while n % i == 0:
             ''' reduce n into a smaller part '''
-            n = n / i 
+            n = n / i
             '''
             if so add the nbr of smaller parts (in fact 1 copy and 4 paste)
             '''
