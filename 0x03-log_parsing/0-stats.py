@@ -40,3 +40,5 @@ if __name__ == '__main__':
             linenum += 1
     except KeyboardInterrupt:
         print_stats()
+        raise
+    print_stats()
