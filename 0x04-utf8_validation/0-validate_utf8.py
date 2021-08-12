@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module for validUtf8 method"""
 
 
 def validUTF8(data):
@@ -7,19 +8,6 @@ def validUTF8(data):
         data: list of integers
     Returns:
         True if valid UTF-8 encoding, otherwise False
-    """
-
-    """
-    A valid UTF-8 character can be 1 - 4 bytes long.
-    For a 1-byte character, the first bit is a 0, followed by its unicode.
-    For a n-bytes character (up to 4 bytes), the first n-bits are all ones,
-    the n+1 bit is 0, followed by n-1 bytes, most significant 2 bits being 10.
-    The input given would be an array of integers containing the data.
-    Return true if the data in the array represents a valid UTF-8 encoding.
-    The array doesn't contain data for just a single character.
-    The array can contain data for multiple characters,
-    all of which can be valid UTF-8 characters
-    and hence the charset represented by the array is valid.
     """
     # Number of bytes in the current UTF-8 character
     n_bytes = 0
