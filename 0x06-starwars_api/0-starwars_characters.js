@@ -1,9 +1,9 @@
 #!/usr/bin/node
-/**                                                                                                                      
- * Prints all characters of a Star Wars movie                                                                            
- * The first positional argument passed is the Movie ID                                                                  
- * Display one character name per line in the same order                                                                 
- * as  list in the /films/ endpoint                                                                                      
+/**
+ * Prints all characters of a Star Wars movie
+ * The first positional argument passed is the Movie ID
+ * Display one character name per line in the same order
+ * as  list in the /films/ endpoint
  */
 
 const request = require('request');
